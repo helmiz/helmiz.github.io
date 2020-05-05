@@ -1,0 +1,17 @@
+---
+layout: page
+title: Categories
+---
+
+<ul class="post-list">
+    {% for category in site.categories %}
+      <h2><strong>{{ category | first }}</strong></h2>
+        <ul>
+        {% for post in category.last %}
+          <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+        </ul>
+      </li>
+      <hr/>
+    {% endfor %}
+</ul>

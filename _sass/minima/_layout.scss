@@ -260,7 +260,6 @@
   margin-left: 0;
   margin-bottom: 0;
   font-size: 17.5px;
-  color: #828282;
 
   &__item, &__label {
     display: inline-block;
@@ -270,4 +269,29 @@
   &__item:not(:last-of-type)::after {
     content: ', '
   }
+}
+
+
+/**
+ * Tags and Categories Style
+ */
+
+.tags-box{
+  li {
+    list-style: none;
+    font-weight: bold;
+    margin-top:10px;
+  }
+  .size{
+    font-size: 0.7em; font-weight: bold; vertical-align: super;
+  }
+}
+
+
+/*time style of tages and categories*/
+
+time{
+  margin-left: 15px;
+  font-style: italic;
+  color: #828282;
 }

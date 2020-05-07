@@ -1,4 +1,4 @@
 <em> Kategori: </em>
 {% for cat in page.categories %}
-<a href="{{site.baseurl}}/categories/#{{ cat }}"><em>{{ cat }}</em></a>{% unless page.categories.last == cat %}, {% endunless %}
+<a href="{{site.url}}/categories/#{{ cat }}"><em>{{ cat }}</em></a>{% unless page.categories.last == cat %}, {% endunless %}
 {% endfor %} 

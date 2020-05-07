@@ -41,6 +41,8 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
 
+site.disqus.shortname: helmiz-github-io
+
 paginate: 5
 paginate_path: "/blog/page:num/"
 permalink: pretty

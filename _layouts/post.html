@@ -20,12 +20,17 @@ layout: default
     {{ content }}
   </div>
 
-  {%- if site.disqus.shortname -%}
+  {% include categories.html %}
+  
+  <!-- {%- if site.disqus.shortname -%}
     {%- include disqus_comments.html -%}
-  {%- endif -%}
+  {%- endif -%} -->
+
+  <script defer src="https://cdn.commento.io/js/commento.js"></script>
+  <div id="commento"></div>
+  
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
 
  
-{% include categories.html %}

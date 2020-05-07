@@ -28,15 +28,4 @@ layout: default
 </article>
 
  
-<div class="post-categories">
-  {% if post %}
-    {% assign categories = post.categories %}
-  {% else %}
-    {% assign categories = page.categories %}
-    <img class="svg-icon" src="/assets/folder-18dp.png" alt="categories" srcset="/assets/folder-18dp.svg">
-  {% endif %}
-  {% for category in categories %}
-    <a href="{{site.url}}/categories/">{{category}}</a>
-    {% unless forloop.last %}&nbsp;{% endunless %}
-  {% endfor %}
-</div>
+{% include categories.html %}

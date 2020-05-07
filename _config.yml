@@ -28,8 +28,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   ini dapat menggunakan kode dan solusi yang saya tampilkan jika 
   mendapatkan permasalahan yang sama. Akhir kata semoga bermanfaat. :)
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://helmiz.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-# helmiz.github.io
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+# https://helmiz.github.io
 twitter_username: helmisug
 github_username:  helmiz
 rss: feed.xml
@@ -49,6 +49,7 @@ jekyll_web: http://jekyllrb.com/
 minima_web: https://github.com/jekyll/minima
 welcome:
   Selamat datang pengunjung semoga bermanfaat. :)
+title-logo: /images/helmiz-logo1.png
 # We are used regular theme. So this theme removed.
 # theme: minima
 

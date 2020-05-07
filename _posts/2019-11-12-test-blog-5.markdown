@@ -3,6 +3,7 @@ layout: post
 title:  "Test Blog 5"
 date:   2019-11-12 23:48:25 +0700
 categories: markdown
+comments: true
 ---
 
 Hi! I'm your first Markdown file in **StackEdit**. If you want to learn about StackEdit, you can read me. If you want to play with Markdown, you can edit me. Once you have finished with me, you can create new files by opening the **file explorer** on the left corner of the navigation bar.

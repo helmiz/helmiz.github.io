@@ -5,7 +5,6 @@ date:   2020-05-08 16:26:25 +0700
 categories: linux
 
 ---
-
 Saya ingin berbagi bagaimana cara agar aplikasi yang kita download dapat tampil pada menu di Linux karena ada beberapa aplikasi untuk linux yang tidak langsung menginstall (biasanya dibundle dengan tar atau zip). Aplikasi yang saya contohkan adalah **Eclipse IDE**. Sebenarnya aplikasi linux yang kita download sudah bisa diigunakan secara langsung dengan klik dua kali pada aplikasi tersebut tanpa harus menambahkannya ke dalam Menu Aplikasi. Berikut adalah caranya:  
   
 1.  Pastikan aplikasi sudah diekstrak karena biasanya aplikasi dibundle dengan tar atau zip. Kalau aplikasi dibundle dengan deb untuk Ubuntu/debian atau rpm untuk Fedora maka aplikasi langsung terinstall dan muncul di Menu Aplikasi sehingga tidak perlu melanjutkan cara ini.
@@ -51,6 +50,6 @@ Catatan:
 -  Ada beberapa aplikasi yang tidak menyertakan gambar seperti aplikasi dari .Appimage. maka kita dapat mengunduhnya di google dan menyimpan satu folder dengan aplikasi tersebut.
 
 _**Sumber**_:  
-- jahid_0903014. 2014. _install latest eclipse in linux mint_. [https://community.linuxmint.com/tutorial/view/1503](https://community.linuxmint.com/tutorial/view/1503). (diakses tanggal 8 Mei 2020).
-- Bastian, Waldo, dkk. _Desktop Menu Specification_. [https://specifications.freedesktop.org/menu-spec/menu-spec-1.0.html](https://specifications.freedesktop.org/menu-spec/menu-spec-1.0.html). (diakses tanggal 8 Mei 2020).
-- Brown, Preston, dkk. _Desktop Entry Specification_. [https://specifications.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html](https://specifications.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html). (diakses tanggal 8 Mei 2020).
+- jahid_0903014. 2014. [install latest eclipse in linux mint](https://community.linuxmint.com/tutorial/view/1503). (diakses tanggal 8 Mei 2020).
+- Bastian, Waldo, dkk. [Desktop Menu Specification](https://specifications.freedesktop.org/menu-spec/menu-spec-1.0.html). (diakses tanggal 8 Mei 2020).
+- Brown, Preston, dkk. [Desktop Entry Specification](https://specifications.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html). (diakses tanggal 8 Mei 2020).

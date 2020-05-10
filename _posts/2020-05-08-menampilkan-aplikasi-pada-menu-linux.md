@@ -5,17 +5,18 @@ date:   2020-05-08 16:26:25 +0700
 categories: linux
 
 ---
-Saya ingin berbagi bagaimana cara agar aplikasi yang kita download dapat tampil pada menu di Linux karena ada beberapa aplikasi untuk linux yang tidak langsung menginstall (biasanya dibundle dengan tar atau zip). Aplikasi yang saya contohkan adalah **Eclipse IDE**. Sebenarnya aplikasi linux yang kita download sudah bisa diigunakan secara langsung dengan klik dua kali pada aplikasi tersebut tanpa harus menambahkannya ke dalam Menu Aplikasi. Berikut adalah caranya:  
+Aplikasi yang saya contohkan adalah **Eclipse IDE**. Sebenarnya aplikasi linux yang kita download sudah bisa diigunakan secara langsung dengan klik dua kali pada aplikasi tersebut tanpa harus menambahkannya ke dalam Menu Aplikasi. Berikut adalah caranya:  
   
-1.  Pastikan aplikasi sudah diekstrak karena biasanya aplikasi dibundle dengan tar atau zip. Kalau aplikasi dibundle dengan deb untuk Ubuntu/debian atau rpm untuk Fedora maka aplikasi langsung terinstall dan muncul di Menu Aplikasi sehingga tidak perlu melanjutkan cara ini.
+1. Pastikan aplikasi sudah diekstrak karena biasanya aplikasi dibundle dengan tar atau zip.
 
 2. Buka Terminal atau Console dan ketik kode berikut:  
-    ```
-    sudo gedit /usr/share/applications/nama_aplikasi.desktop
-    ```
-    Catatan:
-    -   `nama_aplikasi` dapat diganti dengan nama aplikasi yang ingin kita munculkan pada Menu Aplikasi.
-	-   `gedit` adalah aplikasi text editor yang saya gunakan. Bisa diganti dengan `vim` atau `nano`.
+```
+sudo gedit /usr/share/applications/nama_aplikasi.desktop
+```
+Catatan:
+- `nama_aplikasi` dapat diganti dengan nama aplikasi yang ingin kita munculkan pada Menu Aplikasi.
+- `gedit` adalah aplikasi text editor yang saya gunakan. Bisa diganti dengan `vim` atau `nano`.  
+<br/>  
 
 3. Salin dan tempelkan kode berikut ke dalam aplikasi text editor:  
 ```
@@ -38,7 +39,8 @@ Catatan:
 -   `GenericName` adalah nama umum aplikasi atau nama jenis aplikasinya, contohnya "Web Browser".
 -   `Comment` adalah deskripsi aplikasi, contohnya "Untuk melihat website di Internet".
 -   `Categories` adalah tempat dimana aplikasi ditampilkan pada menu. Lihat bagian tambahan di bawah.
-- `Type` adalah spesifikasi pada aplikasi desktop yang memiliki tiga jenis, yaitu `Application`, `Link`, dan`Directory`.
+- `Type` adalah spesifikasi pada aplikasi desktop yang memiliki tiga jenis, yaitu `Application`, `Link`, dan`Directory`.  
+<br/>
 
 4. Simpan dan keluar dari aplikasi teks editor yang kita gunakan untuk membuat file `.desktop`.
 

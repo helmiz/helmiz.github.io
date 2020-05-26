@@ -95,13 +95,15 @@ Langkah terakhir melakukan *format* Flash Disk dengan cara:
 	```
 	- -n NAMA: nama USB Flash Drive kita (menggunakan huruf kapital).
 	- -F 32: Membuat Fat32.  
-    
+    <br />
+
 2. Format dengan NTFS
 	```bash
 	sudo mkfs.ntfs -f -L NAMA /dev/sdd1
 	```
 	- -f: pilihan untuk quick format
 	- -L NAMA: nama USB Flash Drive kita (menggunakan huruf kapital).  
+    <br />
     
 3. Format dengan exFat
 	Install beberapa paket tambahan (Ubuntu):

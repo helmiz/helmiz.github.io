@@ -8,7 +8,6 @@ Berikut adalah cara format Flash Disk atau Flash Drive menggunakan command line 
 - Terminal linux karena pada aplikasi _GUI_ yang terinstall yaitu _Disk_ tidak bisa digunakan.
 - Perintah fdisk untuk menghapus dan membuat partisi.
 - Perintah mkfs untuk menyusun ulang (*format*) partisi.  
-<br />
 
 Petunjuk
 --------
@@ -33,9 +32,8 @@ Petunjuk
 2. Melepas (Unmount) USB Flash Drive yang terbaca di sistem linux:
 	```bash
 	sudo umount /dev/sdd1
-	```
-<br />
-
+	```  
+    
 FDISK
 ------
 1. Ketik perintah di bawah pada terminal linux:
@@ -44,7 +42,7 @@ FDISK
 	sudo fdisk /dev/sdc
 	```
 	
-	Ketik ***p*** untuk *print* ke layar. Maka akan muncul tampilan seperti ini (dalam hal ini partisi Flash Disk saya):
+	Ketik `p` untuk *print* ke layar. Maka akan muncul tampilan seperti ini (dalam hal ini partisi Flash Disk saya):
 	
 	```bash
 	Disk /dev/sdd: 3,75 GiB, 4002910208 bytes, 7818184 sectors
@@ -60,13 +58,13 @@ FDISK
 
     ```
     
-2. Ketik ***d*** untuk menghapus (*delete*) setiap partisi.
+2. Ketik `d` untuk menghapus (*delete*) setiap partisi.
 
-3. Ketik ***o*** untuk membuat (*new*) DOS partisi baru.
+3. Ketik `o` untuk membuat (*new*) DOS partisi baru.
 
-4. Ketik ***n*** untuk membuat (*new*) partisi baru.
+4. Ketik `n` untuk membuat (*new*) partisi baru.
 
-5. Selanjutnya akan muncul pilihan jenis partisi *Primary* (utama) atau *Extended* (tambahan), tekan ***Enter*** atau ***p***.
+5. Selanjutnya akan muncul pilihan jenis partisi *Primary* (utama) atau *Extended* (tambahan), tekan `Enter` atau `p`.
 	```bash
 	Partition type
 	p   primary (0 primary, 0 extended, 4 free)
@@ -74,19 +72,19 @@ FDISK
 	Select (default p): 
 	```
 	
-6. Lalu akan muncul pilihan tambahan, tekan ***Enter*** untuk memberikan nilai *default*.
+6. Lalu akan muncul pilihan tambahan, tekan `Enter` untuk memberikan nilai *default*.
 	```bash
 	Using default response p.
 	Partition number (1-4, default 1): 
 	First sector (2048-7818183, default 2048): 
 	Last sector, +/-sectors or +/-size{K,M,G,T,P} (2048-7818183, default 7818183): 
 	```
-7. Secara *default* jenis partisi akan menjadi Linux. Untuk melihat daftar jenis partisi dapat mengetik ***l***, pilih jenis partisi yang diinginkan seperti ***7 HPFS/NTFS/exFAT*** untuk partisi ***NTFS*** dan ***exFat*** serta ***b W95 FAT32*** untuk ***Fat32***. Mengganti jenis partisi dengan mengetik ***t*** dan masukan *id* jenis partisi.
 
-8. Ketik ***w*** untuk menulis/mengaplikasikan proses yang kita lakukan ke dalam Flash Disk.
+7. Secara *default* jenis partisi akan menjadi Linux. Untuk melihat daftar jenis partisi dapat mengetik `l`, pilih jenis partisi yang diinginkan seperti `7 HPFS/NTFS/exFAT` untuk partisi ***NTFS*** dan ***exFat*** serta `b W95 FAT32` untuk ***Fat32***. Mengganti jenis partisi dengan mengetik `t` dan masukan `id` jenis partisi.
 
-9. Ketik **q** untuk keluar (*quit*).  
-<br />
+8. Ketik `w` untuk menulis/mengaplikasikan proses yang kita lakukan ke dalam Flash Disk.
+
+9. Ketik `q` untuk keluar (*quit*).  
 
 MKFS
 ----
@@ -96,15 +94,15 @@ Langkah terakhir melakukan *format* Flash Disk dengan cara:
 	sudo mkfs.vfat -F 32 -n NAMA /dev/sdd1
 	```
 	- -n NAMA: nama USB Flash Drive kita (menggunakan huruf kapital).
-	- -F 32: Membuat Fat32. 
-
+	- -F 32: Membuat Fat32.  
+    
 2. Format dengan NTFS
 	```bash
 	sudo mkfs.ntfs -f -L NAMA /dev/sdd1
 	```
 	- -f: pilihan untuk quick format
-	- -L NAMA: nama USB Flash Drive kita (menggunakan huruf kapital).
-
+	- -L NAMA: nama USB Flash Drive kita (menggunakan huruf kapital).  
+    
 3. Format dengan exFat
 	Install beberapa paket tambahan (Ubuntu):
 	```bash
@@ -114,8 +112,8 @@ Langkah terakhir melakukan *format* Flash Disk dengan cara:
 	```bash
 	sudo mkfs.exfat -n NAMA /dev/sdd1
 	```
-	- -n NAMA: nama USB Flash Drive kita (menggunakan huruf kapital).
-
+	- -n NAMA: nama USB Flash Drive kita (menggunakan huruf kapital).  
+    
 Terkadang USB Flash Drive yang kita format tidak terbaca padahal terbaca di Windows. Solusinya adalah:
 1. Masuk ke Partition Manager.
     

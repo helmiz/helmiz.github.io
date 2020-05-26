@@ -22,13 +22,13 @@ Catatan:
 ```
 [Desktop Entry]
 Encoding=UTF-8
-Exec=/home/helmiz/tools/eclipse/eclipse
-Icon=/home/helmiz/tools/eclipse/icon.xpm
+Exec=/home/username/tools/eclipse/eclipse
+Icon=/home/username/tools/eclipse/icon.xpm
 Type=Application
 Terminal=false
-Comment=Eclipse Integrated Development Environment
-Name=Eclipse 2019
-GenericName=eclipse-2019-12-R
+Comment=Eclipse Integrated Development Environment for Java
+Name=Eclipse
+GenericName=Java Editor
 StartupNotify=false
 Categories=Development;IDE;Java;
 ```

@@ -51,7 +51,7 @@ minima_web: https://github.com/jekyll/minima
 welcome:
   Selamat datang pengunjung semoga bermanfaat. :)
 title-logo: /images/helmiz-logo1.png
-google_analytics: UA-165931167-1
+# google_analytics: UA-165931167-1
 # We are used regular theme. So this theme removed.
 # theme: minima
 

@@ -91,10 +91,10 @@ MKFS
 Langkah terakhir melakukan *format* Flash Disk dengan cara:
 1. Format dengan Fat32
 	```bash
-	sudo mkfs.vfat -F 32 -n NAMA /dev/sdd1
+	sudo mkfs.vfat -F32 -n NAMA /dev/sdd1
 	```
 	- -n NAMA: nama USB Flash Drive kita (menggunakan huruf kapital).
-	- -F 32: Membuat Fat32.  
+	- -F32: Membuat Fat32.  
     <br />
 
 2. Format dengan NTFS

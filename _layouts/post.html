@@ -22,13 +22,9 @@ layout: default
 
   {% include categories.html %}
   
-  <!-- {%- if site.disqus.shortname -%}
+  {%- if site.disqus.shortname -%}
     {%- include disqus_comments.html -%}
-  {%- endif -%} -->
-
-  <script defer src="https://cdn.commento.io/js/commento.js"></script>
-  <div id="commento"></div>
-  
+  {%- endif -%}
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>

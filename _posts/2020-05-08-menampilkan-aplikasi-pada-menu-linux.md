@@ -3,7 +3,7 @@ layout: post
 title: Menampilkan Aplikasi Pada Menu di Linux
 date:   2020-05-08 16:26:25 +0700
 categories: linux
-
+comments: true
 ---
 Aplikasi yang saya contohkan adalah **Eclipse IDE**. Sebenarnya aplikasi linux yang kita download sudah bisa diigunakan secara langsung dengan klik dua kali pada aplikasi tersebut tanpa harus menambahkannya ke dalam Menu Aplikasi. Berikut adalah caranya:  
   

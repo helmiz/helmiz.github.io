@@ -12,14 +12,9 @@ Pastikan aplikasi sudah diekstrak karena biasanya aplikasi dibundle dengan tar a
 ```
 sudo gedit /usr/share/applications/nama_aplikasi.desktop
 ```
-  {% capture notice-2 %}
-  #### Catatan
-
+  Catatan:
   * `nama_aplikasi` dapat diganti dengan nama aplikasi yang ingin kita munculkan ke dalam Menu Aplikasi.
   * gedit adalah aplikasi text editor yang saya gunakan. Bisa diganti dengan `vi` atau `nano`.
-  {% endcapture %}
-
-<div class="notice">{{ notice-2 | markdownify }}</div>
 
 2. Salin dan tempelkan kode berikut ke dalam aplikasi text editor:
 ```
@@ -35,25 +30,26 @@ GenericName=eclipse-2019-12-R
 StartupNotify=false
 Categories=Development;IDE;Java;
 ```
+Catatan:
+* `Exec` adalah path dimana kita menyimpan nama aplikasi. Penulisan path harus jelas dan benar jika tidak maka aplikasi tidak akan muncul pada Menu Aplikasi.
+* `Icon` adalah path dimana kita menyimpan icon untuk aplikasi. Penulisan path harus jelas dan benar jika tidak maka gambar aplikasi tidak akan muncul pada Menu Aplikasi.
+* `Name` adalah nama untuk aplikasi. Disini kita bisa ganti nama sesuai dengan keinginan kita.
+* `GenericName` adalah nama aplikasi beserta versinya. Disini kita bisa ganti nama sesuai dengan keinginan kita.
+* `Comment` adalah deskripsi aplikasi.
+* `Categories` adalah kategori aplikasi yang ingin kita munculkan.
 
-## I. Pengecekan
-Memastikan apakah Disk kita memakai MBR atau tidak, dengan cara buka `Disk Management` di pencarian Windows. Setelah itu klik kanan pada `Hard Disk` kita (biasanya Hard Disk 0). Pilih `Properties` dan klik Tab bagian `Volumes`. Mari kita perhatikan gambar di bawah ini:
-<figure class="half">
-    <a href="/assets/images/2020/menghapus-linux-dualboot/01-disk_management.png"><img src="/assets/images/2020/menghapus-linux-dualboot/01-disk_management.png"></a>
-    <a href="/assets/images/2020/menghapus-linux-dualboot/02-properties.png"><img src="/assets/images/2020/menghapus-linux-dualboot/02-properties.png"></a>
-    <figcaption>Gambar pada Disk Management dan Tab Volumes pada Properties.</figcaption>
-</figure>
+3. Simpan dan keluar dari aplikasi teks editor yang kita gunakan untuk membuat file `.desktop`.
 
-## II. Download
-Download Mini Tool Partition Wizard (Free) pada link berikut: [https://www.partitionwizard.com/free-partition-manager.html](https://www.partitionwizard.com/free-partition-manager.html)
+4. Lakukan pengecekan pada pencarian Menu Aplikasi. Jika tidak muncul kemungkinan salah pada saat memasukan path.
 
-## III. Melakukan Partisi
-Pada program Mini Tool Partition Wizard, pilih `Disk & Partition Management`. Ikuti gambar dan penjelasan berikut sebagai petunjuk:
-<figure>
-    <a href="/assets/images/2020/menghapus-linux-dualboot/03-mini_tool_partition.png"><img src="/assets/images/2020/menghapus-linux-dualboot/03-mini_tool_partition.png"></a>
-    <figcaption>Gambar Disk & Partition Management.</figcaption>
-</figure>
-1. Pilih partisi yang mengandung linux (punya saya partisi 3). Klik kanan dan pilih Delete.
-2. Pilih Disk yang partisinya di Delete tadi (punya saya disk 1). Klik kanan dan pilih Rebuild MBR.
-3. Operations Pending yang berisi Informasi alur yang sudah kita lakukan yaitu Delete partisi dan rebuild MBR, tetapi masih bisa kita Undo atau tidak jadi.
-4. Apply jika sudah yakin.
+{% capture notice-2 %}
+#### Tambahan
+
+* Untuk menentukan `categories` dapat mengunjungi tautan ini <a href="https://askubuntu.com/questions/674403/when-creating-a-desktop-file-what-are-valid-categories">https://askubuntu.com</a>.
+* Ada beberapa aplikasi yang tidak menyertakan gambar seperti aplikasi dari .Appimage. maka kita dapat mengunduhnya di google dan menyimpan satu folder dengan aplikasi tersebut.
+{% endcapture %}
+
+<div class="notice">{{ notice-2 | markdownify }}</div>
+
+## Daftar Pustaka
+- jahid_0903014. 2014. [Install latest eclipse in linux mint](https://community.linuxmint.com/tutorial/view/1503) (diakses tanggal 5 Januari 2020).

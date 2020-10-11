@@ -10,9 +10,6 @@ classes: wide
 ## Konfigurasi VirtualBox
 <figure>
     <a href="{{ site.url }}{{ site.baseurl }}/assets/images/2020/berbagi-file-antara-linux-dan-windows/1-Virtualbox-Settings.png"><img src="{{ site.url }}{{ site.baseurl }}/assets/images/2020/berbagi-file-antara-linux-dan-windows/1-Virtualbox-Settings.png" alt="Gambar bagian Settings pada Windows"></a>
-</figure>
-
-<figure>
   {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
   <figcaption>Gambar bagian Settings pada Windows.</figcaption>
 </figure>

@@ -4,7 +4,7 @@ categories:
   - Sistem Operasi
 tags:
   - VirtualBox
-date: 2020-10-11 18:asdd123123123:25 +0700
+date: 2020-10-11 18:23:25 +0700
 classes: wide
 ---
 ## Konfigurasi VirtualBox

@@ -8,18 +8,13 @@ date: 2020-10-11 18:23:25 +0700
 classes: wide
 ---
 ## Konfigurasi VirtualBox
-<figure class="align-center">
+<figure>
     <a href="{{ site.url }}{{ site.baseurl }}/assets/images/2020/berbagi-file-antara-linux-dan-windows/1-Virtualbox-Settings.png"><img src="{{ site.url }}{{ site.baseurl }}/assets/images/2020/berbagi-file-antara-linux-dan-windows/1-Virtualbox-Settings.png" alt="Gambar bagian Settings pada Windows"></a>
-    <figcaption>Gambar bagian Settings pada Windows</figcaption>
 </figure>
-
-{% capture fig_img %}
-![1-Virtualbox-Settings]({{ "/assets/images/2020/berbagi-file-antara-linux-dan-windows/1-Virtualbox-Settings.png" | relative_url }})
-{% endcapture %}
 
 <figure>
   {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
-  <figcaption>Photo from Unsplash.</figcaption>
+  <figcaption>Gambar bagian Settings pada Windows.</figcaption>
 </figure>
 
 1. Pilih Windows yang sudah dijadikan VM pada VirtualBox.

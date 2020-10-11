@@ -9,7 +9,7 @@ classes: wide
 ---
 ## Konfigurasi VirtualBox
 <figure>
-    <a href="/assets/images/2020/berbagi-file-antara-linux-dan-windows/1-Virtualbox-Settings.png"><img src="/assets/images/2020/berbagi-file-antara-linux-dan-windows/1-Virtualbox-Settings.png"></a>
+    <a href="{{ site.url }}{{ site.baseurl }}/assets/images/2020/berbagi-file-antara-linux-dan-windows/1-Virtualbox-Settings.png"><img src="{{ site.url }}{{ site.baseurl }}/assets/images/2020/berbagi-file-antara-linux-dan-windows/1-Virtualbox-Settings.png" alt="Gambar bagian Settings pada Windows" class="full"></a>
     <figcaption>Gambar bagian Settings pada Windows</figcaption>
 </figure>
 
@@ -49,7 +49,7 @@ classes: wide
 
 5. Setelah restart VM (reboot), maka direktori *share* yang sudah dikonfigurasi tadi akan muncul pada *File Explorer* seperti gambar di atas.
 
-http://ubuntuhandbook.org/index.php/2019/06/virtualbox-share-a-folder-in-ubuntu-host-to-windows-guest/
+
 
 ## Daftar Pustaka
 - Mingkul, Ji. 2019. D, Miguel Quintero. 2020. [Virtualbox: Share A Folder in Ubuntu Host to Windows Guest](http://ubuntuhandbook.org/index.php/2019/06/virtualbox-share-a-folder-in-ubuntu-host-to-windows-guest/) (diakses tanggal 10 Oktober 2020).

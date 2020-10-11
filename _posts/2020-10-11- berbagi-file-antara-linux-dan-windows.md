@@ -10,9 +10,9 @@ classes: wide
 ## Konfigurasi VirtualBox
 <figure>
     <a href="{{ site.url }}{{ site.baseurl }}/assets/images/2020/berbagi-file-antara-linux-dan-windows/1-Virtualbox-Settings.png"><img src="{{ site.url }}{{ site.baseurl }}/assets/images/2020/berbagi-file-antara-linux-dan-windows/1-Virtualbox-Settings.png" alt="Gambar bagian Settings pada Windows"></a>
-  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
-  <figcaption>Gambar bagian Settings pada Windows.</figcaption>
 </figure>
+
+
 
 1. Pilih Windows yang sudah dijadikan VM pada VirtualBox.
 2. Tekan menu ***Settings***.
@@ -29,7 +29,6 @@ classes: wide
 ## Pengaturan Sistem Operasi Guest (Windows)
 <figure>
     <a href="/assets/images/2020/berbagi-file-antara-linux-dan-windows/2-Virtualbox-Device-Menu.png"><img src="/assets/images/2020/berbagi-file-antara-linux-dan-windows/2-Virtualbox-Device-Menu.png"></a>
-    <figcaption>Gambar menu Device</figcaption>
 </figure>
 
 1. Jalankan Sistem Operasi yang sudah dikonfigurasi dalam hal ini Windows 10.
@@ -37,7 +36,6 @@ classes: wide
 
 <figure>
     <a href="/assets/images/2020/berbagi-file-antara-linux-dan-windows/3-file-explorer.png"><img src="/assets/images/2020/berbagi-file-antara-linux-dan-windows/3-file-explorer.png"></a>
-    <figcaption>Gambar File Explorer</figcaption>
 </figure>
 
 3. Buka ***File Explorer -> Pilih ***This PC*** -> Klik dua kali pada ***CD Drive (D:) VirtualBox Guest Additions***.
@@ -45,7 +43,6 @@ classes: wide
 
 <figure>
     <a href="/assets/images/2020/berbagi-file-antara-linux-dan-windows/4-share-directory.png"><img src="/assets/images/2020/berbagi-file-antara-linux-dan-windows/4-share-directory.png"></a>
-    <figcaption>Gambar direktori share antara host dan guest</figcaption>
 </figure>
 
 5. Setelah restart VM (reboot), maka direktori *share* yang sudah dikonfigurasi tadi akan muncul pada *File Explorer* seperti gambar di atas.

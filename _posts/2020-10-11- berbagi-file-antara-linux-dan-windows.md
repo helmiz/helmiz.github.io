@@ -41,10 +41,6 @@ classes: wide
 3. Buka ***File Explorer -> Pilih ***This PC*** -> Klik dua kali pada ***CD Drive (D:) VirtualBox Guest Additions***.
 4. Melakukan instalasi dengan mengklik dua kali pada ***VBoxWindowsAdditions***.
 
-<figure>
-    <a href="/assets/images/2020/berbagi-file-antara-linux-dan-windows/4-share-directory.png"><img src="/assets/images/2020/berbagi-file-antara-linux-dan-windows/4-share-directory.png"></a>
-</figure>
-
 {% capture fig_img %}
 ![Foo]({{ "/assets/images/2020/berbagi-file-antara-linux-dan-windows/4-share-directory.png" | relative_url }})
 {% endcapture %}

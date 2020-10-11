@@ -12,15 +12,29 @@ Pastikan aplikasi sudah diekstrak karena biasanya aplikasi dibundle dengan tar a
 ```
 sudo gedit /usr/share/applications/nama_aplikasi.desktop
 ```
-{% capture notice-2 %}
-#### Catatan
+  {% capture notice-2 %}
+  #### Catatan
 
-* `nama_aplikasi` dapat diganti dengan nama aplikasi yang ingin kita munculkan ke dalam Menu Aplikasi.
-* gedit adalah aplikasi text editor yang saya gunakan. Bisa diganti dengan `vi` atau `nano`.
-{% endcapture %}
+  * `nama_aplikasi` dapat diganti dengan nama aplikasi yang ingin kita munculkan ke dalam Menu Aplikasi.
+  * gedit adalah aplikasi text editor yang saya gunakan. Bisa diganti dengan `vi` atau `nano`.
+  {% endcapture %}
 
 <div class="notice">{{ notice-2 | markdownify }}</div>
 
+2. Salin dan tempelkan kode berikut ke dalam aplikasi text editor:
+```
+[Desktop Entry]
+Encoding=UTF-8
+Exec=/home/helmiz/tools/eclipse/eclipse
+Icon=/home/helmiz/tools/eclipse/icon.xpm
+Type=Application
+Terminal=false
+Comment=Eclipse Integrated Development Environment
+Name=Eclipse 2019
+GenericName=eclipse-2019-12-R
+StartupNotify=false
+Categories=Development;IDE;Java;
+```
 
 ## I. Pengecekan
 Memastikan apakah Disk kita memakai MBR atau tidak, dengan cara buka `Disk Management` di pencarian Windows. Setelah itu klik kanan pada `Hard Disk` kita (biasanya Hard Disk 0). Pilih `Properties` dan klik Tab bagian `Volumes`. Mari kita perhatikan gambar di bawah ini:

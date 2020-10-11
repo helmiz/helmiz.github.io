@@ -8,7 +8,7 @@ date: 2020-10-11 18:23:25 +0700
 classes: wide
 ---
 ## Konfigurasi VirtualBox
-<figure>
+<figure class="align-center">
     <a href="{{ site.url }}{{ site.baseurl }}/assets/images/2020/berbagi-file-antara-linux-dan-windows/1-Virtualbox-Settings.png"><img src="{{ site.url }}{{ site.baseurl }}/assets/images/2020/berbagi-file-antara-linux-dan-windows/1-Virtualbox-Settings.png" alt="Gambar bagian Settings pada Windows" class="full"></a>
     <figcaption>Gambar bagian Settings pada Windows</figcaption>
 </figure>
@@ -49,7 +49,13 @@ classes: wide
 
 5. Setelah restart VM (reboot), maka direktori *share* yang sudah dikonfigurasi tadi akan muncul pada *File Explorer* seperti gambar di atas.
 
-
+<div class="notice">
+  <h4>Error: The Specified path does not exist</h4>
+        <ol>
+            <li>Pilih file yang ada di direktori sharing file.</li>
+            <li>Copy dan paste ke direktori yang ada di Windows, seperti direktori Downloads.</li>
+        </ol>
+</div>
 
 ## Daftar Pustaka
 - Mingkul, Ji. 2019. D, Miguel Quintero. 2020. [Virtualbox: Share A Folder in Ubuntu Host to Windows Guest](http://ubuntuhandbook.org/index.php/2019/06/virtualbox-share-a-folder-in-ubuntu-host-to-windows-guest/) (diakses tanggal 10 Oktober 2020).

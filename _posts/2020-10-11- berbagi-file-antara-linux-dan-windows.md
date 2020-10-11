@@ -27,29 +27,16 @@ classes: wide
 11. Jika Sudah Pilih Ok.
 
 ## Pengaturan Sistem Operasi Guest (Windows)
-<figure>
-    <a href="/assets/images/2020/berbagi-file-antara-linux-dan-windows/2-Virtualbox-Device-Menu.png"><img src="/assets/images/2020/berbagi-file-antara-linux-dan-windows/2-Virtualbox-Device-Menu.png"></a>
+<figure class="third">
+  <a href="/assets/images/2020/berbagi-file-antara-linux-dan-windows/2-Virtualbox-Device-Menu.png"><img src="/assets/images/2020/berbagi-file-antara-linux-dan-windows/2-Virtualbox-Device-Menu.png"></a>
+  <a href="/assets/images/2020/berbagi-file-antara-linux-dan-windows/3-file-explorer.png"><img src="/assets/images/2020/berbagi-file-antara-linux-dan-windows/3-file-explorer.png"></a>
+  <a href="/assets/images/2020/berbagi-file-antara-linux-dan-windows/4-share-directory.png"><img src="/assets/images/2020/berbagi-file-antara-linux-dan-windows/4-share-directory.png"></a>
 </figure>
 
 1. Jalankan Sistem Operasi yang sudah dikonfigurasi dalam hal ini Windows 10.
 2. Pilih menu ***Device*** -> Pilih ***Insert Guest Additions CD image*** seperti pada gambar di atas.
-
-<figure>
-    <a href="/assets/images/2020/berbagi-file-antara-linux-dan-windows/3-file-explorer.png"><img src="/assets/images/2020/berbagi-file-antara-linux-dan-windows/3-file-explorer.png"></a>
-</figure>
-
 3. Buka ***File Explorer -> Pilih ***This PC*** -> Klik dua kali pada ***CD Drive (D:) VirtualBox Guest Additions***.
 4. Melakukan instalasi dengan mengklik dua kali pada ***VBoxWindowsAdditions***.
-
-{% capture fig_img %}
-![Foo]({{ "/assets/images/2020/berbagi-file-antara-linux-dan-windows/4-share-directory.png" | relative_url }})
-{% endcapture %}
-
-<figure>
-  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
-  <figcaption>Photo from Unsplash.</figcaption>
-</figure>
-
 5. Setelah restart VM (reboot), maka direktori *share* yang sudah dikonfigurasi tadi akan muncul pada *File Explorer* seperti gambar di atas.
 
 <div class="notice">

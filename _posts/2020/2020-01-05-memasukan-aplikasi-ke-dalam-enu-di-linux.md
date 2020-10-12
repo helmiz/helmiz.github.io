@@ -14,7 +14,7 @@ sudo gedit /usr/share/applications/nama_aplikasi.desktop
 ```
   Catatan:
   * `nama_aplikasi` dapat diganti dengan nama aplikasi yang ingin kita munculkan ke dalam Menu Aplikasi.
-  * gedit adalah aplikasi text editor yang saya gunakan. Bisa diganti dengan `vi` atau `nano`.
+  * `gedit` adalah aplikasi text editor yang saya gunakan. Bisa diganti dengan `vi` atau `nano`.
 
 2. Salin dan tempelkan kode berikut ke dalam aplikasi text editor:
 ```

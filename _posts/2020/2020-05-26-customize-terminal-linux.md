@@ -1,9 +1,9 @@
 ---
 title: "Mempercantik Tampilan Terminal Linux"
 categories:
-  - Sistem Operasi
+  - Konfigurasi
 tags:
-  - Terminal
+  - Aplikasi
 date: 2020-05-27 17:19:25 +0700
 classes: wide
 ---

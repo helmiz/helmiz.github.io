@@ -1,7 +1,7 @@
 ---
 title: "Menghapus Linux Dualboot Windows Pada Partisi MBR"
 categories:
-  - Sistem Operasi
+  - Konfigurasi
 tags:
   - Partisi
 date: 2020-05-26 18:27:25 +0700

@@ -1,7 +1,7 @@
 ---
 title: "Berbagi File Antara Linux Host dan Windows Guest Pada VirtualBox"
 categories:
-  - Sistem Operasi
+  - Konfigurasi
 tags:
   - VirtualBox
 date: 2020-10-11 18:23:25 +0700

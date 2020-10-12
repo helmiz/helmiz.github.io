@@ -1,7 +1,7 @@
 ---
 title: "Memasukan Aplikasi ke dalam Menu di Linux"
 categories:
-  - Sistem Operasi
+  - Konfigurasi
 tags:
   - Aplikasi
 date: 2020-01-05 18:27:25 +0700

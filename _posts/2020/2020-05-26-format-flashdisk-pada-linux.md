@@ -1,7 +1,7 @@
 ---
 title: "Format Flashdisk pada Linux"
 categories:
-  - Sistem Operasi
+  - Konfigurasi
 tags:
   - Partisi
 date: 2020-05-27 17:19:25 +0700

@@ -1,7 +1,7 @@
 ---
 title: "Download Video Youtube dengan Youtube-dl"
 categories:
-  - How-to
+  - Konfigurasi
 tags:
   - youtube-dl
 date: 2020-10-12 12:20:25 +0700

@@ -1,7 +1,7 @@
 ---
 title: "Membuat Bootable Linux pada Sistem Operasi Linux"
 categories:
-  - Sistem Operasi
+  - Konfigurasi
 tags:
   - Partisi
 date: 2020-05-26 19:00:25 +0700

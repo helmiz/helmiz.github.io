@@ -43,13 +43,9 @@ Disini saya hanya mendemokan beberapa perintah yang sering saya gunakan, jika in
 ```
 Usage: youtube-dl [OPTIONS] [URL...]
 ```
-<div class="notice">
-  <h4>Catatan:</h4>
-      <ol>
-          <li>[OPTIONS] adalah jenis perintah yang dapat digunakan yang ada pada dokumentasi.</li>
-          <li>[URL...] adalah link video youtube.</li>
-      </ol>
-</div>
+***Catatan***
+- [OPTIONS] adalah jenis perintah yang dapat digunakan yang ada pada dokumentasi.
+- [URL...] adalah link video youtube.
 
 ### Download Video
 1. Pastikan kita sudah memilih video youtube dan copy link video tersebut.
@@ -87,7 +83,7 @@ format code  extension  resolution note
 18           mp4        640x360    360p  672k , avc1.42001E, 24fps, mp4a.40.2@ 96k (44100Hz), 26.97MiB
 22           mp4        1280x720   720p 2090k , avc1.64001F, 24fps, mp4a.40.2@192k (44100Hz) (best)
 ```
-Catatan: 
+***Catatan***: 
 - Perhatikan keterangan video. Ada yang hanya *Video Only* dan *Audio Only*.
 - Biasanya format video paling bagus di bagian paling bawah.
 
@@ -105,14 +101,10 @@ Perintah untuk mengunduh:
 ```
 youtube-dl -f [FORMAT CODE] --write-sub/--write-auto-sub/--all-subs [URL....]
 ```
-<div class="notice">
-  <h4>Catatan:</h4>
-      <ol>
-          <li>--write-sub: Mengunduh subtitle default biasanya English.</li>
-          <li>--write-auto-sub: Mengunduh subtitle auto generated English.</li>
-          <li>--all-subs: Mengunduh semua subtitle yang tersedia.</li>
-      </ol>
-</div>
+***Catatan***:
+- --write-sub: Mengunduh subtitle default biasanya English
+- --write-auto-sub: Mengunduh subtitle auto generated English.
+- --all-subs: Mengunduh semua subtitle yang tersedia.</li>
 
 5. Download semua video yang ada di dalam *Playlist* dengan nomor indeksnya:
 ```

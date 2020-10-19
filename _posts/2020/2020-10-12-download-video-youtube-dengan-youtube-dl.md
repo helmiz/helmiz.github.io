@@ -7,7 +7,6 @@ tags:
 date: 2020-10-12 12:20:25 +0700
 classes: wide
 ---
-## Pengertian
 Youtube-dl adalah program *command-line* untuk mengunduh video dari Youtube dan beberapa [website lain](http://ytdl-org.github.io/youtube-dl/supportedsites.html). Program ini membutuhkan Python Interpreter dan dapat berjalan di sistem operasi Linux, Windows dan Mac OS X.
 
 ## Installasi
@@ -102,9 +101,9 @@ Perintah untuk mengunduh:
 youtube-dl -f [FORMAT CODE] --write-sub/--write-auto-sub/--all-subs [URL....]
 ```
 ***Catatan***:
-- --write-sub: Mengunduh subtitle default biasanya English
-- --write-auto-sub: Mengunduh subtitle auto generated English.
-- --all-subs: Mengunduh semua subtitle yang tersedia.</li>
+- `--write-sub`: Mengunduh subtitle default biasanya English
+- `--write-auto-sub`: Mengunduh subtitle auto generated English.
+- `--all-subs`: Mengunduh semua subtitle yang tersedia.</li>
 
 5. Download semua video yang ada di dalam *Playlist* dengan nomor indeksnya:
 ```

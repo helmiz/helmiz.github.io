@@ -7,7 +7,6 @@ tags:
 date: 2020-10-12 18:22:25 +0700
 classes: wide
 ---
-## Pengertian
 FFmpeg adalah perangkat lunak free dan open source tersusun dari banyak libraries program untuk menangani video, audio, file multimedia dan stream.
 
 ## Installasi

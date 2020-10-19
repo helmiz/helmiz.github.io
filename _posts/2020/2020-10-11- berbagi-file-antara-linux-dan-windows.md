@@ -12,8 +12,6 @@ classes: wide
     <a href="{{ site.url }}{{ site.baseurl }}/assets/images/2020/berbagi-file-antara-linux-dan-windows/1-Virtualbox-Settings.png"><img src="{{ site.url }}{{ site.baseurl }}/assets/images/2020/berbagi-file-antara-linux-dan-windows/1-Virtualbox-Settings.png" alt="Gambar bagian Settings pada Windows"></a>
 </figure>
 
-
-
 1. Pilih Windows yang sudah dijadikan VM pada VirtualBox.
 2. Tekan menu ***Settings***.
 3. Pilih tab ***Shared Folders***.

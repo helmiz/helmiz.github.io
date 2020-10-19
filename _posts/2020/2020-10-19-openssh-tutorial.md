@@ -48,7 +48,7 @@ sudo apt install net-tools
 ```
 
 - Jalankan kode berikut untuk menampilkan port apa saja yang sedang terkoneksi pada server kita:
-```
+```bash
 sudo netstat -tulpn
 ```
 Contoh hasil pada Openssh akan listening pada port 22:
@@ -74,7 +74,6 @@ Contoh hasil tampilan:
      Memory: 388.0K
      CGroup: /system.slice/sshd.service
              └─901 /usr/sbin/sshd -D
-
 Okt 17 12:19:22 centos-server1 systemd[1]: Starting OpenSSH server daemon..
 Okt 17 12:19:22 centos-server1 sshd[901]: Server Listening on 0.0.0.0 port 22
 Okt 17 12:19:22 centos-server1 sshd[901]: Server Listening on :: port 22
@@ -100,15 +99,13 @@ Contoh hasil tampilan:
 
 - Koneksikan dengan mengetik perintah berikut pada client :
 ```bash
-    ssh user@ipaddress
-
+ssh user@ipaddress
 ```
 Contoh hasil tampilan:
 ```bash
 ssh person1@192.168.100.43
 person1@192.168.100.43's password: 
 Activate the web console with: systemctl enable --now cockpit.socket
-
 Last login: Sun Oct 18 01:46:31 2020
 [person1@centos-server1 ~]$
 ```
@@ -184,7 +181,8 @@ ssh -v user@ipaddress
 cat /var/log/auth.log
 # atau secara follow realtime
 tail -f /var/log/auth.log
-
+```
+```bash
 # Keluarga Redhat
 cat /var/log/secure
 # atau secara follow realtime
@@ -304,7 +302,6 @@ ssh root@ipAddress
 2. Membuat User baru di dalam Cloud Instance isikan `username` dan `password`.
 ```bash
 adduser userName
-
 # Menambahkan sudo pada userName hanya pada Ubuntu 
 usermod -aG sudo userName
 ```
@@ -312,10 +309,8 @@ usermod -aG sudo userName
 3. Disable Root Login:
 ```bash
 sudo nano /etc/ssh/sshd_config
-
 # Cari dan ganti
 PermitRootLogin no
-
 # Restart SSH
 sudo systemctl restart ssh
 ```
@@ -324,7 +319,6 @@ sudo systemctl restart ssh
 1. Membuat Public key dan Private key pada local:
 ```bash
 ssh-keygen
-
 # Masukan Passphrase
 ```
 
@@ -336,8 +330,7 @@ ssh-copy-id -i ~/.ssh/id_rsa.pub userName@ipAddress
 3. Mematikan Password Authentication
 ```bash
 sudo nano /etc/ssh/sshd_config
-
-# Ganti
+# Ganti menjadi
 PasswordAuthentication no
 ```
 
@@ -350,7 +343,6 @@ sudo systemctl restart ssh
 1. Masuk ke server dan ganti nomor port berapapun dengan perintah:
 ```bash
 sudo nano /etc/ssh/sshd_config
-
 # Ganti default Port bagian:
 Port 22
 ```
@@ -358,7 +350,6 @@ Port 22
 2. Masuk ke server dengan:
 ```bash
 ssh -p portNumber userName@ipAddress
-
 # Jika menggunakan SCP
 scp -P portNumber
 ```
@@ -372,7 +363,6 @@ sudo systemctl restart ssh
 1. Masuk ke server dan tambahkan kode berikut:
 ```bash
 sudo nano /etc/ssh/sshd_config
-
 # Tambahkan
 AllowUsers userName
 ```

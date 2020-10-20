@@ -14,7 +14,7 @@ Pada konfigurasi ini kita menggunakan sistem operasi:
 
 ## Pengaturan VirtualBox
 Pastikan kita sudah menginstall sistem operasi yang akan dikonfigurasi. 
-<figure>
+<figure class="align-center">
     <a href="{{ site.url }}{{ site.baseurl }}/assets/images/2020/mengaktifkan-fitur-pada-virtualbox/1-pengaturan-vbox.png"><img src="{{ site.url }}{{ site.baseurl }}/assets/images/2020/mengaktifkan-fitur-pada-virtualbox/1-pengaturan-vbox.png" alt="Gambar bagian Settings pada VBox"></a>
     <figcaption>Gambar untuk langkah 3, 4, dan 5.</figcaption>
 </figure>

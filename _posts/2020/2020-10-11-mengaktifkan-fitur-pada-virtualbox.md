@@ -89,27 +89,63 @@ rpm -q kernel-devel
 ```bash
 uname -r
 ```
-9. Membuat direktori *Mount Point* untuk *guest additions ISO image* dengan cara:
+9. Pilih menu ***Device*** -> Pilih ***Insert Guest Additions CD image*** seperti pengaturan pada Windows pada langkah kedua.
+
+10. Akan muncul *pop up* pemberitahuan untuk menjalankan via *GUI*. Tetapi kita dapat menggunakan terminal dengan cara masuk ke direktori mount VirtualBox:
 ```bash
-sudo mkdir -p /mnt/cdrom
+cd /media/userName/VBox_Direktori/
 ```
-10. Lakukan *Mount* ke direktori yang sudah kita buat dengan cara:
+***Catatan***:
+  - `userName`: Ganti dengan nama user kita.
+  - `VBox_direktori`: Ganti dengan nama VBox kita tergantung versi.
+11. Jalankan Virtualbox dengan cara:
 ```bash
-sudo mount /dev/cdrom /mnt/cdrom
-```
-11. Masuk ke direktori dan jalankan VirtualBox installer script dengan:
-```bash
-cd /mnt/cdrom
 sudo ./VBoxLinuxAdditions.run 
 ```
 12. Jalankan perintah berikut agar User dapat mengakses share folder (ganti userName dengan user yang kita buat):
+```bash
+sudo usermod -aG vboxsf userName
 ```
-sudo usermod -aG vboxsf userName in your guest Linux VM.
-```
-13. Aktifkan Copy paste dengan pilih menu ***Device*** -> Pilih ***Shared Clipboard*** -> Pilih ***Biderectional*** sama seperti pengaturan pada Windows di bagian atas.
-14. Aktifkan Drag and drop dengan pilih menu ***Device*** -> Pilih ***Drag and Drop*** -> Pilih ***Biderectional*** sama seperti pengaturan pada Windows di bagian atas.
+13. Aktifkan Copy paste dengan pilih menu ***Device*** -> Pilih ***Shared Clipboard*** -> Pilih ***Biderectional*** sama seperti pengaturan pada Windows pada langkah ketiga.
+14. Aktifkan Drag and drop dengan pilih menu ***Device*** -> Pilih ***Drag and Drop*** -> Pilih ***Biderectional*** sama seperti pengaturan pada Windows pada langkah keempat.
 15. Restart VM (Reboot).
 
+## Pengaturan Sistem Operasi Ubuntu Pada VirtualBox
+1. Jalankan Sistem Operasi Ubuntu yang sudah diatur pada Pengaturan VirtualBox di bagian atas.
+2. Buka terminal, Lakukan update sistem:
+```bash
+sudo apt update
+sudo apt upgrade
+```
+3. Restart VM (Reboot).
+4. Install paket aplikasi yang dibutuhkan:
+```bash
+$ sudo apt install build-essential dkms linux-headers-$(uname -r)
+```
+5. Pilih menu ***Device*** -> Pilih ***Insert Guest Additions CD image*** seperti pengaturan pada Windows pada langkah kedua.
+
+6. Akan muncul *pop up* pemberitahuan untuk menjalankan via *GUI*. Tetapi kita dapat menggunakan terminal dengan cara masuk ke direktori mount VirtualBox:
+```bash
+cd /media/userName/VBox_Direktori/
+```
+***Catatan***:
+  - `userName`: Ganti dengan nama user kita.
+  - `VBox_direktori`: Ganti dengan nama VBox kita tergantung versi.
+7. Jalankan Virtualbox dengan cara:
+```bash
+sudo ./VBoxLinuxAdditions.run 
+```
+8. Jalankan perintah berikut agar User dapat mengakses share folder (ganti userName dengan user yang kita buat):
+```bash
+sudo usermod -aG vboxsf userName
+```
+9. Aktifkan Copy paste dengan pilih menu ***Device*** -> Pilih ***Shared Clipboard*** -> Pilih ***Biderectional*** sama seperti pengaturan pada Windows pada langkah ketiga.
+10. Aktifkan Drag and drop dengan pilih menu ***Device*** -> Pilih ***Drag and Drop*** -> Pilih ***Biderectional*** sama seperti pengaturan pada Windows pada langkah keempat.
+11. Restart VM (Reboot).
 
 ## Daftar Pustaka
-- Mingkul, Ji. 2019. [Virtualbox: Share A Folder in Ubuntu Host to Windows Guest](http://ubuntuhandbook.org/index.php/2019/06/virtualbox-share-a-folder-in-ubuntu-host-to-windows-guest/) (diakses tanggal 10 Oktober 2020).
+- Mingkul, Ji. 2019. [Virtualbox: Share A Folder in Ubuntu Host to Windows Guest](http://ubuntuhandbook.org/index.php/2019/06/virtualbox-share-a-folder-in-ubuntu-host-to-windows-guest/). (diakses tanggal 10 Oktober 2020).
+
+- Kiarie, James. 2020. [How to Install VirtualBox Guest Additions on CentOS 8](https://www.tecmint.com/install-virtualbox-guest-additions-on-centos-8/). (diakses tanggal 10 Oktober 2020).
+
+- Kili, Aaron. 2020. [How to Install VirtualBox Guest Additions in Ubuntu](https://www.tecmint.com/install-virtualbox-guest-additions-in-ubuntu/). (diakses tanggal 10 Oktober 2020).

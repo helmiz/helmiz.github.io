@@ -120,7 +120,7 @@ sudo apt upgrade
 3. Restart VM (Reboot).
 4. Install paket aplikasi yang dibutuhkan:
 ```bash
-$ sudo apt install build-essential dkms linux-headers-$(uname -r)
+sudo apt install build-essential dkms linux-headers-$(uname -r)
 ```
 5. Pilih menu ***Device*** -> Pilih ***Insert Guest Additions CD image*** seperti pengaturan pada Windows pada langkah kedua.
 
@@ -149,3 +149,5 @@ sudo usermod -aG vboxsf userName
 - Kiarie, James. 2020. [How to Install VirtualBox Guest Additions on CentOS 8](https://www.tecmint.com/install-virtualbox-guest-additions-on-centos-8/). (diakses tanggal 10 Oktober 2020).
 
 - Kili, Aaron. 2020. [How to Install VirtualBox Guest Additions in Ubuntu](https://www.tecmint.com/install-virtualbox-guest-additions-in-ubuntu/). (diakses tanggal 10 Oktober 2020).
+
+- Average Linux User. 2019. [How to enable a Virtualbox shared folder for Linux guest systems](https://averagelinuxuser.com/virtualbox-shared-folder/). (diakses tanggal 10 Oktober 2020).
